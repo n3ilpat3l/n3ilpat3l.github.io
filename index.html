@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <title>Neil Patel</title>
+    <link rel="stylesheet" href = "/src/css/header.css">
+    <link rel="stylesheet" href = "/src/css/introduction.css">
+    <link rel="stylesheet" href="/src/css/index.css">
+    <link rel="stylesheet" href="/src/css/about-me.css">
+    <link rel="stylesheet" href="/src/css/experience.css">
+    <link rel="stylesheet" href="/src/css/projects.css">
+    <link rel="stylesheet" href="/src/css/animations.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu-bar">
+                <li class="menu-left">
+                    <img class="socials" src="src/assets/linkedin.png" onclick="linkedinRoute()">
+                    <img class="socials" src="src/assets/github.png" onclick="githubRoute()">
+                    <img class="socials" src="src/assets/email.png" onclick="emailRoute()">
+                </li>
+                <li class="menu-right">
+                    <p class="subsection" onclick="scrollToAboutMe()">About Me</p>
+                    <p class="subsection" onclick="scrollToExperience()">Experience</p>
+                    <p class="subsection" onclick="scrollToProjects()">Projects</p>
+                    <p class="subsection" onclick="emailRoute()">Contact Me</p>
+                </li>
+            </ul>
+        </nav>
+    </header>    
+    <main>
+        <div class = introduction-section>
+            <div class = "intro-picture">
+                <img class = "neil-picture" src = "src/assets/neil.png">
+            </div>
+
+            <div class = "intro-paragraph">
+                <p class = "intro-text-main">Hey, I'm <span class = "highlight">Neil</span></p>
+                <p class = "intro-text-subtext">Check Out Some of my Cool Projects!</p>
+            </div>
+        </div>
+        <div id="about-me-section" class="about-me-section fade-in-on-scroll">
+            <h1 class="about-me-header"> About Me</h1>
+            <div class="about-flexbox">
+                <img class="about-me-picture" src="/src/assets/neil_about.jpeg">
+                <p class="about-me-text">
+                    Hi, I'm Neil Patel. I am a current 4th year Computer Science Undergrad at the 
+                    <span style="color: blue;">Georgia <span style="color: gold;">Institute </span>of 
+                    <span style="color: gold;">Technology </span></span> in Atlanta, Georgia. My specializations lie in Networking and 
+                    Artificial Intelligence. Aside from software engineering, I like exploring different technologies in the real world. 
+                    I believe that technology and its advancement is the future, and I love learning and experimenting to be apart of 
+                    that revolution. If I am not at my computer, I am busy climbing, playing some basketball, or watching football.
+                </p>
+            </div>
+        </div>
+        
+
+        <div id = "experience-section" class="experience-section fade-in-on-scroll">
+            <h3 class = "experience-main-header">Experience</h3>
+            <div class="experience-item">
+                <div class="company-header">
+                    <img class = "company-logo" src="/src/assets/vip.jpeg">
+                    <h3 class = "position-header">Full-Stack Developer, Georgia Tech VIP Program</h3>
+                </div>
+                <p class="experience-location">Atlanta, GA</p>
+                <ul class="experience-details">
+                    <li>Developed an intelligent tutoring application using React, implementing dynamic UI components for an adaptive user interface.</li>
+                    <li>Created API using Python and Pinecone to fetch and vectorize user inputs and question data from Piazza.</li>
+                    <li>Integrated JavaScript algorithms to query vector databases to personalize user learning paths, improving engagement and satisfaction with generated answers.</li>
+                    <li>Collaborated on UX optimization to enhance user interface and efficiency, leading to a 53% increase in answer acceptance.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="company-header">
+                    <img class = "company-logo" src="/src/assets/skymul.jpeg">
+                    <h3 class = "position-header">Engineering Intern, SkyMul</h3>
+                </div>
+                <p class="experience-location">Atlanta, GA</p>
+                <ul class="experience-details">
+                    <li>Tested and implemented a battery-recommendation program for company website using JavaScript, Node.js, and MySQL.</li>
+                    <li>Constructed survey drone circuit boards for construction site evaluation prior to deployment.</li>
+                    <li>Designed and assembled smart housing for flight battery systems.</li>
+                    <li>Conducted experiments to determine the ideal manufacturing orientation relative to load vector direction.</li>
+                    <li>Increased prototype strength by 32% by optimizing manufacturing orientation of flight housings.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id = "projects-section" class = "projects-section fade-in-on-scroll">
+            <div id="projects" class="project-display">
+                <h2>My Projects</h2>
+                <div class="grid">
+
+                    <div class="project-card">
+                      <img src="src/assets/ko.png" alt="Project Screenshot" />
+                      <div class="project-info">
+                        <h3>Knowledge Obsolescense Detection System</h3>
+                        <p>Python · Sci-kit Learn · Snorkel</p>
+                        <a target = "_blank" href="https://github.com/n3ilpat3l/KnowledgeObsolescenseDetectionSystem" class="btn">View Project</a>
+                      </div>
+                    </div>
+
+
+                    <div class="project-card">
+                      <img src="src/assets/salary-prediction.png" alt="Project Screenshot" />
+                      <div class="project-info">
+                        <h3>Sports Contract Predictor</h3>
+                        <p>Python · Django · Sci-kit Learn</p>
+                        <a target = "_blank" href="https://github.com/n3ilpat3l/NFL-Salary-Prediction" class="btn">View Project</a>
+                      </div>
+                    </div>
+
+
+                    <div class="project-card">
+                      <img src="src/assets/dbms.png" alt="Project Screenshot" />
+                      <div class="project-info">
+                        <h3> Database Management System</h3>
+                        <p>Javascript · React · Node.js · Express · MySQL</p>
+                        <a target = "_blank" href="https://github.com/n3ilpat3l/DatabaseManagementSystem" class="btn">View Project</a>
+                      </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="src/assets/Dungeon-Crawler.png" alt="Project Screenshot" />
+                        <div class="project-info">
+                          <h3> Dungeon Crawler</h3>
+                          <p>Java · JavaFx</p>
+                          <a target = "_blank" href="https://github.com/n3ilpat3l/Dungeon-Crawler-Game" class="btn">View Project</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>      
+    </main>
+    <aside></aside>
+    <footer></footer>
+
+    <script src = "/src/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url("/src/assets/backgrond.avif");
+    scroll-behavior: smooth;
+    z-index: 1;
+  }
