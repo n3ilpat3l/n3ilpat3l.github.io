@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const windowHeight = window.innerHeight;
 
             // Check if the element is visible in the viewport
-            if (rect.top < windowHeight - 50 && rect.bottom > 50) {
+            if (rect.top < windowHeight && rect.bottom > 50) {
                 element.classList.add('visible');
             } else {
                 element.classList.remove('visible'); // Fade out if not in view
