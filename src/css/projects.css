@@ -1,5 +1,5 @@
 .projects-section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .project-display {
@@ -20,19 +20,12 @@
 
 }
 
-.carousel-content {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    max-width: 80%;
-}
-
 .project-card {
     background-color: #222;
     border: 1px solid #333;
     border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
+    margin: 5%;
+    padding: 2%;
     height: fit-content;
     width: .2fr;
     justify-content: space-around;

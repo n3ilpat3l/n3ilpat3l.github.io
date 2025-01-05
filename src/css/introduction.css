@@ -5,14 +5,14 @@
 }
 
 .intro-picture {
-    margin-top: 20vh;
-    margin-left: 20vh;
+    margin-top: 25vh;
+    margin-left: 15vh;
     margin-right:5vh;
 }
 
 .neil-picture {
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
     border: solid;
     border-width: 5px;
     border-color: dodgerblue;
