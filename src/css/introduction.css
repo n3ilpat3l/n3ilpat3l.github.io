@@ -11,8 +11,8 @@
 }
 
 .neil-picture {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border: solid;
     border-width: 5px;
     border-color: dodgerblue;
@@ -28,7 +28,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
     font-weight: bolder;
     color: white;
-    font-size: 60px;
+    font-size: 83px;
     margin: 0;
     padding: 3vh;
     animation: fadeInSlideRight 2s ease-out forwards;
