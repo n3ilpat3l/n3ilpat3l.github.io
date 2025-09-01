@@ -1,1 +1,1 @@
-Personal Portfolio. Check it out
+My personal portfolio. Check it out!

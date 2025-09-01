@@ -66,15 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScrollTop = scrollTop;
     });
 
-    // Parallax effect for hero image
-    const heroImage = document.querySelector('.hero-image');
-    if (heroImage) {
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * -0.5;
-            heroImage.style.transform = `translateY(${rate}px)`;
-        });
-    }
+
 
     // Add hover effects to project cards
     const projectCards = document.querySelectorAll('.project-card');
