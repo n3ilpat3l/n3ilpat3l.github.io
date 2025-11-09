@@ -16,26 +16,26 @@
     --success-color: #34C759;
     --warning-color: #FF3B30;
     
-    /* Apple UI Neutral Colors */
-    --background-primary: #FFFFFF;
-    --background-secondary: #F2F2F7;
-    --background-tertiary: #E5E5EA;
-    --background-quaternary: #D1D1D6;
+    /* Apple Dark Mode Neutral Colors */
+    --background-primary: #000000;
+    --background-secondary: #1C1C1E;
+    --background-tertiary: #2C2C2E;
+    --background-quaternary: #3A3A3C;
     
-    /* Apple UI Text Colors */
-    --text-primary: #1D1D1F;
-    --text-secondary: #86868B;
-    --text-tertiary: #C7C7CC;
-    --text-quaternary: #E5E5EA;
+    /* Apple Dark Mode Text Colors */
+    --text-primary: #FFFFFF;
+    --text-secondary: #EBEBF5;
+    --text-tertiary: #8E8E93;
+    --text-quaternary: #636366;
     
-    /* Apple UI Border Colors */
-    --border-light: #E5E5EA;
-    --border-medium: #D1D1D6;
-    --border-dark: #C7C7CC;
+    /* Apple Dark Mode Border Colors */
+    --border-light: #38383A;
+    --border-medium: #48484A;
+    --border-dark: #636366;
     
-    /* Apple UI Gradients */
+    /* Apple Dark Mode Gradients */
     --gradient-primary: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
-    --gradient-secondary: linear-gradient(135deg, #F2F2F7 0%, #E5E5EA 100%);
+    --gradient-secondary: linear-gradient(135deg, #1C1C1E 0%, #2C2C2E 100%);
     --gradient-accent: linear-gradient(135deg, #FF9500 0%, #FF3B30 100%);
     
     /* Spacing */
@@ -59,12 +59,12 @@
     --font-size-4xl: 2.25rem;
     --font-size-5xl: 3rem;
     
-    /* Apple UI Shadows */
-    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    /* Apple Dark Mode Shadows */
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     
     /* Border Radius */
     --radius-sm: 0.375rem;
@@ -125,7 +125,7 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     border-bottom: 1px solid var(--border-light);
@@ -346,7 +346,7 @@ p {
 /* About Section */
 .about {
     padding: var(--spacing-3xl) 0;
-    background: var(--background-primary);
+    background: var(--background-secondary);
 }
 
 .about-content {
@@ -387,7 +387,7 @@ p {
 /* Experience Section */
 .experience {
     padding: var(--spacing-3xl) 0;
-    background: var(--background-tertiary);
+    background: var(--background-secondary);
 }
 
 .experience-grid {
@@ -396,7 +396,7 @@ p {
 }
 
 .experience-card {
-    background: var(--background-primary);
+    background: var(--background-tertiary);
     padding: var(--spacing-xl);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-sm);
@@ -421,7 +421,7 @@ p {
     height: 60px;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    background: var(--background-tertiary);
+    background: var(--background-quaternary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -487,12 +487,15 @@ p {
 }
 
 .project-card {
-    background: var(--background-primary);
+    background: var(--background-tertiary);
     border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: var(--transition-normal);
     border: 1px solid var(--border-light);
+    min-width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 .project-card:hover {
@@ -556,7 +559,7 @@ p {
 /* Contact Section */
 .contact {
     padding: var(--spacing-3xl) 0;
-    background: var(--background-tertiary);
+    background: var(--background-secondary);
 }
 
 .contact-content {
@@ -582,9 +585,10 @@ p {
 /* Footer */
 .footer {
     padding: var(--spacing-xl) 0;
-    background: var(--text-primary);
-    color: white;
+    background: var(--background-secondary);
+    color: var(--text-primary);
     text-align: center;
+    border-top: 1px solid var(--border-light);
 }
 
 .footer-text {
