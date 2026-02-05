@@ -182,6 +182,28 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.carousel {
+    margin-top: 2rem;
+    display: block;
+}
+
+.carousel-track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(260px, 1fr);
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-padding: 0.5rem;
+    padding: 0.5rem;
+    scrollbar-width: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+
+
 .card {
     background: var(--black-800);
     border: 1px solid var(--border);
@@ -287,5 +309,9 @@ a {
 
     .cta {
         padding: 2rem;
+    }
+
+    .carousel {
+        display: block;
     }
 }
