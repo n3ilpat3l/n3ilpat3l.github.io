@@ -105,6 +105,9 @@ a {
     text-decoration: none;
     transition: transform 0.2s ease;
     border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-primary {
